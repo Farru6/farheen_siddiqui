@@ -1,0 +1,112 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  padding: 2rem;
+
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1100px;
+    width: 100%;
+  }
+
+  /* ✅ Left text */
+  .hero-text {
+    flex: 1;
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      color: #222;
+
+      .highlight {
+        color: #007bff;
+        font-weight: 700;
+      }
+    }
+
+    /* 🔥 Role animation (fade in & change text) */
+    .animated-role {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #ff9800;
+      margin-bottom: 1rem;
+      animation: fadeText 6s infinite;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+      max-width: 500px;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+  }
+
+  /* ✅ Right image */
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #007bff20;
+      box-shadow: 0 10px 25px rgba(0, 123, 255, 0.2);
+      transition: transform 0.4s ease;
+
+      &:hover {
+        transform: scale(1.05) rotate(-2deg);
+      }
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #007bff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  transition: 0.3s;
+
+  &:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+  }
+}
+
+/* 🔥 Keyframes for role fade animation */
+@keyframes fadeText {
+  0%, 20% { content: "MEAN Stack Developer"; opacity: 1; }
+  40%, 60% { content: "Full Stack Enthusiast"; opacity: 1; }
+  80%, 100% { content: "Problem Solver"; opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-image img {
+    width: 180px;
+    height: 180px;
+  }
+}
