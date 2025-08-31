@@ -1,4 +1,12 @@
 <section id="projects" class="projects">
+  <!-- <h2>Projects</h2> -->
+  <div class="projects-grid">
+    <app-projectcardsection 
+      [title]="'Real-Time Chat Application'" 
+      [description]="'A real-time chat app with secure login and message history.'" 
+      [tech]="'PHP, MySQL, AJAX, Bootstrap'" 
+      [github]="'https://github.com/farru6/chat-app'" 
+      [demo]="'#'"><section id="projects" class="projects">
   <h2>Projects</h2>
   <div class="projects-grid">
     <app-projectcardsection 
@@ -7,6 +15,18 @@
       [tech]="'PHP, MySQL, AJAX, Bootstrap'" 
       [github]="'https://github.com/farru6/chat-app'" 
       [demo]="'#'">
+    </app-projectcardsection>
+
+    <app-projectcardsection 
+      [title]="'Bank Management System'" 
+      [description]="'Core banking operations with GUI and JDBC integration.'" 
+      [tech]="'Java, Swing, JDBC, MySQL'" 
+      [github]="'https://github.com/farru6/bank-management'" >
+    </app-projectcardsection>
+  </div>
+</section>
+
+
     </app-projectcardsection>
 
     <app-projectcardsection 

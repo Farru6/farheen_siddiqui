@@ -1,10 +1,14 @@
-<nav class="navbar">
-  <div class="logo">Farheen Siddiqui</div>
+<nav class="navbar" id="navbar">
+  <div class="logo">Farheen <span>Siddiqui</span></div>
   <ul class="nav-links">
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/aboutsection">About</a></li>
-    <li><a routerLink="/skillsection">Skills</a></li>
-    <li><a routerLink="/projectsection">Projects</a></li>
-    <li><a routerLink="/contactsection">Contact</a></li>
+    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+    <li><a routerLink="/aboutsection" routerLinkActive="active">About</a></li>
+    <li><a routerLink="/skillsection" routerLinkActive="active">Skills</a></li>
+    <li><a routerLink="/projectsection" routerLinkActive="active">Projects</a></li>
+    <li><a routerLink="/contactsection" routerLinkActive="active">Contact</a></li>
   </ul>
+  <!-- Hamburger for mobile -->
+  <div class="hamburger">
+    <span></span><span></span><span></span>
+  </div>
 </nav>

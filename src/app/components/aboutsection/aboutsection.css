@@ -1,7 +1,23 @@
 .about {
-  background: #fff;
+  background: linear-gradient(135deg, #667eea, #764ba2); /* same as hero */
+  color: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 3rem 2rem;
   text-align: center;
+  max-width: 900px;
+  margin: 4rem auto;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffdd57; /* highlight color */
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
 }

@@ -1,21 +1,21 @@
 .footer {
   text-align: center;
-  padding: 1.5rem;
-  background: #333;
+  padding: 0.5rem;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* blue gradient */
   color: #fff;
   font-size: 0.9rem;
+}
 
-  .social-links {
-    margin-top: 0.5rem;
+.footer .social-links {
+  margin-top: 0.5rem;
+}
 
-    a {
-      color: #00c6ff;
-      margin: 0 0.5rem;
-      text-decoration: none;
+.footer .social-links a {
+  color: #00c6ff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
 
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
+.footer .social-links a:hover {
+  text-decoration: underline;
 }

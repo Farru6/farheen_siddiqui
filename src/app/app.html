@@ -1,7 +1,13 @@
-<main>
-  <app-header></app-header>
-</main>
-<router-outlet />
-<main>
-  <app-footersection></app-footersection>
-</main>
+<div class="layout">
+  <header>
+    <app-header></app-header>
+  </header>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer>
+    <app-footersection></app-footersection>
+  </footer>
+</div>
